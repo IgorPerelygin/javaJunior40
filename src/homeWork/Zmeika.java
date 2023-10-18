@@ -15,7 +15,7 @@ public class Zmeika {
         final String TITLE_OF_PROGRAM = "Classic Game Snake";
         final String GAME_OVER_MSG = "GAME OVER";
         final int POINT_RADIUS = 20; // in pix
-        final int FILLED_WIDTH = 30; //in point
+        final int FILLED_WIDTH = 20; //in point
         final int FILLED_HEIGHT = 20; // in point
         final int FILLED_DX = 6;
         final int FILLED_DY = 28;

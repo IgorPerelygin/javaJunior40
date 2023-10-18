@@ -1,4 +1,4 @@
-package Test;
+package lesson14;
 
 /**
  * Интерфейс работы с матрицами
@@ -40,14 +40,15 @@ public interface IMatrix {
 	
 	/**
 	 * Устанавливает элемент матрицы по индексам
-	 * 
-	 * @param rowIndex индекс строки 
+	 *
+	 * @param rowIndex индекс строки
 	 * @param colIndex индекс столбца
-	 * @param value новое значение элемента
+	 * @param value    новое значение элемента
+	 * @return
 	 * @throws IndexOutOfBoundsException если индекс строки меньше нуля или больше (или равно) количества строк матрицы
-	 * 			или индекс столбца меньше нуля или больше (или равно) количества столбцов матрицы
+	 *                                   или индекс столбца меньше нуля или больше (или равно) количества столбцов матрицы
 	 */
-	void setValueAt(int rowIndex, int colIndex, double value) throws IndexOutOfBoundsException;
+	double setValueAt(int rowIndex, int colIndex, double value) throws IndexOutOfBoundsException;
 	
 	/**
 	 * Возвращает сумму текущей матрицы и второго аргумента. <br/>
