@@ -15,7 +15,7 @@ public class CopyWhithFileChannel implements CopyUtils {
             sourceChannel = new FileInputStream(from).getChannel();
             destChannel = new FileOutputStream(to).getChannel();
             destChannel.transferFrom(sourceChannel, 0, sourceChannel.size());
-        }finally {
+        } finally {
             sourceChannel.close();
             destChannel.close();
         }

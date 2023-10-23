@@ -8,7 +8,7 @@ public class CopyWithCatalogJ7 implements CopyUtils {
     @Override
     public void copy(String from, String to) throws IOException {
         Path file = Path.of(from);
-                Path go = Path.of(to);
-                Files.copy(file, go);
+        Path go = Path.of(to);
+        Files.copy(file, go);
     }
 }
