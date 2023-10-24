@@ -4,6 +4,17 @@ class Vehicle {
     int wheels; // количество колес
     int maxspeed; // максимальная скорость
     int burnup; // расход топлива
+
+    // объявлявем метод, вычисляющий пройденный путь
+    // метод принемает параметр interval, задающий времяб и не возвращает никакого значения (void)
+    // теперь возвращает вычисленное значение типа double
+    double distance (double interval) {
+        double value = maxspeed * interval;
+        return value;
+        //System.out.println("пройдет путь, равный " + value + " км.");
+    } // metod
+
+
 } // Vehicle class
 class VehicleDemo {
     public static void main(String[] args) {
