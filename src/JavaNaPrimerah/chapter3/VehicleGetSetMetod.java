@@ -5,7 +5,17 @@ class  VehicleGetSet {
     private int maxspeed; // макс скорость
     int burnup; // расход топлива
 
-    // конструктор с параметрами
+    // конструктор без параметров, инициализирующий переменные объекта стандартными значениями
+    VehicleGetSet(){
+        /*this.passengers = 4;
+        this.wheels = 4;
+        this.maxspeed = 160;
+        this.burnup = 13;*/
+        this(4,4,160,13); // более короткий ввод
+    } // constructor
+
+    // конструктор с параметрами, инициализирующий переменные объектаа значениями из
+    // вызывающей программы
     VehicleGetSet (int passengers, int wheels, int maxspeed, int burnup) {
         this.passengers = passengers;
         this.wheels = wheels;

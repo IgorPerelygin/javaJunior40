@@ -237,7 +237,7 @@ public class MatrixTest extends TestCase {
                 {87678678, 45637988, 86486355}};
         Matrix matrix = new Matrix(forMatrix);
         double resultFact = matrix.determinant();
-        double resultWant = 1.085088545630583778678654456456456454564870;
+        double resultWant = 1.0850885456305839;
         assertEquals(resultFact, resultWant);
     }
 
