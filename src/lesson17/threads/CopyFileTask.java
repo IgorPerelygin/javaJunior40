@@ -2,7 +2,6 @@ package lesson17.threads;
 
 import lesson15.CopyUtils;
 
-
 /**
  * Задача копирования файла в отдельном потоке
  * 
