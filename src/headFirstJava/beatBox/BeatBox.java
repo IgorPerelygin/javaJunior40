@@ -17,7 +17,7 @@ public class BeatBox {
     String[] instrumentNames = {"Bass Drum", "Closed Hi-Hat", "Open Hi-Hat", "Acoustic Snare", "Crash Cymbal",
                                 "Hand Clap", "High Tom", "Hi Bongo", "Maracas", "Whistle", "Low Conga",
                                 "Cowbell", "Vibraslap", "Low-mid Tom", "High Agogo", "Open Hi Conga"};
-    
+
 
 
 
