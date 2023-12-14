@@ -16,10 +16,10 @@ public class ServiceBrowser {
         mainPanel = new JPanel();
         frame.getContentPane().add(BorderLayout.CENTER, mainPanel);
         // получает заглушку и вызывает getServiceList
-        Objects[] services = getServicesList();
+        Objects[] services = (Objects[]) getServicesList();
         serviceList = new JComboBox(services); // добавляем сервисы(массив элементов Object) в виджет JComboBox
         frame.getContentPane().add(BorderLayout.NORTH, serviceList);
-        serviceList.addActionListener(new MyListener());
+        serviceList.addActionListener(new MyListListener());
         frame.setSize(500, 500);
         frame.setVisible(true);
     }
@@ -36,7 +36,7 @@ public class ServiceBrowser {
         }
     }
 
-    Object[] getServicesList {
+    Object[] getServicesList() {
         Object obj = null;
         Object[] services = null;
 
@@ -49,8 +49,8 @@ public class ServiceBrowser {
 
         try {
             services = server.getServiceList();
-        } catch (ExecutionException ex){
-            ex.printStackTrace();
+        } catch (RemoteException e) {
+            throw new RuntimeException(e);
         }
         return services;
     }

@@ -18,7 +18,7 @@ public class ServiceServerImpl extends UnicastRemoteObject implements ServiceSer
          */
     }
 
-    public Objects[] getServiceList() {
+    public Object[] getServiceList() {
         System.out.println("in remote");
         return serviceList.keySet().toArray();
         /*
@@ -28,7 +28,7 @@ public class ServiceServerImpl extends UnicastRemoteObject implements ServiceSer
          */
     }
 
-    public Service getService(Object serviceKey) throws RemoteException {
+    public Service getService (Object serviceKey) throws RemoteException {
         Service theService = (Service) serviceList.get(serviceKey);
         return theService;
     }
