@@ -37,5 +37,28 @@ public class LevelOne {
         }
         System.out.println("Введённое число: " + resultY);
 
+
+        System.out.println("Введите первое слово:");
+        String word1 = scanner.next();
+        System.out.println("Введите второе слово:");
+        String word2 = scanner.next();
+        String resultWord;
+        if (word1.compareTo(word2)<0) {
+            resultWord = "совпадают";
+        } else {
+            resultWord = "не совпадают";
+        }
+        System.out.println("Первые буквы слов: " + resultWord);
+
+
+        System.out.println("Введите слово:");
+        String word3 = scanner.next();
+
+        char resultChar;
+        resultChar = word3.charAt(word3.length() - 1);
+        if (resultChar == 'ь') {
+            resultChar = word3.charAt(word3.length() - 2);
+        }
+        System.out.println("Последняя буква слова: " + resultChar);
     }
 }
